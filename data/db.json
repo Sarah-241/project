@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "name": "Sarah Anna Johns",
+      "username": "sarahanna",
+      "password": "sarah@241",
+      "count": 1,
+      "id": 1
+    },
+    {
+      "name": "Tinto John",
+      "username": "tinto",
+      "password": "tinto@123",
+      "count": 0,
+      "id": 2
+    },
+    {
+      "name": "Vishnu K M",
+      "username": "vishnu",
+      "password": "1234567",
+      "count": 0,
+      "id": 3
+    },
+    {
+      "name": "Cyril M Johns",
+      "username": "cyril",
+      "password": "cyril@123",
+      "count": 0,
+      "id": 4
+    },
+    {
+      "username": "irine",
+      "password": "irine@123",
+      "count": 4,
+      "id": 5
+    },
+    {
+      "name": "Irine George",
+      "username": "irine",
+      "password": "irine@123",
+      "count": 0,
+      "id": 6
+    },
+    {
+      "username": "lalu",
+      "password": "lalu@123",
+      "count": 0,
+      "id": 7
+    },
+    {
+      "name": "Anna Johns",
+      "username": "anna",
+      "password": "anna@123",
+      "count": 0,
+      "id": 8
+    },
+    {
+      "name": "Kichu K",
+      "username": "kichu",
+      "password": "kichu@123",
+      "count": 0,
+      "id": 9
+    },
+    {
+      "name": "Anisree A",
+      "username": "ani",
+      "password": "ani@123",
+      "count": null,
+      "id": 10
+    },
+    {
+      "name": "Lulu M",
+      "username": "lulu",
+      "password": "lulu@123",
+      "count": 1,
+      "id": 11
+    },
+    {
+      "name": "Manu K",
+      "username": "manu",
+      "password": "manu@123",
+      "count": 1,
+      "id": 12
+    }
+  ]
+}
