@@ -41,15 +41,17 @@ export default function Register(){
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({...user,id:Date.now()})
         })
-        .then((resp)=>{console.log(resp)
-          navigate("/")
-               setUser({name:'',username:'',password:'',count:0})
+        .then((resp)=>
+          resp.json()
+          // navigate("/")
+          //      setUser({name:'',username:'',password:'',count:0})
+        )
+        .then((data)=>{
+            console.log(data)
+            alert(data)
+            navigate("/")
+            setUser({name:'',username:'',password:'',count:0})
         })
-        //.then((data)=>{
-        //     console.log(data)
-        //     navigate("/")
-        //     setUser({name:'',username:'',password:'',count:0})
-        // })
         
        
         //  navigate("/")

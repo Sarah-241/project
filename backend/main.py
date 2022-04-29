@@ -34,13 +34,11 @@ def write():
             file_data["users"].append(client_data)
             file.seek(0)
             json.dump(file_data, file, indent = 4)
-    
+        
     _json = request.json
-
     write_json(_json)
-   
-  
-    return "registration successfull"
+    return jsonify("registration successful")
+    
 
 @app.route("/users", methods=['GET'])
 def readusers():
@@ -61,6 +59,7 @@ def readuser(id):
 
 @app.route('/login',methods=['POST'])
 def login():
+    f = 0
     
     _json = request.json
     _username = _json["username"]
@@ -70,6 +69,7 @@ def login():
     
     for obj in json_data["users"]:
 	    if obj['username'] == _username and obj['password'] == _password:
+                f = 1
                 print(obj['count'])
                 obj['count'] = obj['count']+1
                 print(obj['count'])
@@ -78,6 +78,11 @@ def login():
                     json.dump(json_data,jsonFile)
                 print(obj['id'])
                 return str(obj['id'])
+     
+    if f!=1:
+            print(0)
+            return jsonify("error")
+        
        
           
         

@@ -47,12 +47,19 @@ export function Login(){
         .then((data)=>{
             console.log(data)
            
-          
-            navigate("/welcome/"+data)
+           console.log(typeof(data))
+          //  navigate("/welcome/"+data)
+           if(typeof(data) === "number")
+            {navigate("/welcome/"+data)}
+           else
+           {
+             console.log(1)
+             alert("wrong user")
+            } 
             
             
-            setUser({username:'',password:''})
-        })
+         })
+        setUser({username:'',password:''})
         // setUserArray([...userArray,user])
         // setUser()
         // for (let v of userArray)

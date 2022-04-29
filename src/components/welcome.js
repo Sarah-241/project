@@ -34,7 +34,7 @@ export default function Welcome(){
     return (
         <Box >
             {a.map((d)=> 
-           <div>
+           <div key={d.id}>
                <h2>Welcome {d.username}</h2>
                <p>Visit:{d.count}</p>
                 </div>)}
